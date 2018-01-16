@@ -1,11 +1,12 @@
-import React from "react";
-import { Route, IndexRoute } from "react-router";
+import React from 'react';
+import { IndexRoute, Route} from 'react-router';
 
-import App from "./components/app";
-import PostsIndex from "./components/posts_index";
+import App from './components/app';
+import PostIndex from './components/posts_index';
 
 export default (
-  <Route path="/" component={App}>
-    <IndexRoute component={PostsIndex} />
-  </Route>
+<Route path="/" component={App} >
+  <IndexRoute component={PostIndex} />
+
+</Route>
 );
